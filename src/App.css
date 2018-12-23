@@ -1,5 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+#root {
+  background: linear-gradient(#e565b9, #04e590);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -29,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  background: #a65ce5;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #5c337f;
+  color: #cccccc;
+  font-family: monospace;
+  font-size: 2rem;
+  transition: all 300ms ease;
+}
+
+button:active {
+  background: #5c337f;
+  box-shadow: none;
+  transform: scale(0.9);
+}
+
+button:hover:not(:active) {
+  background: #ce94ff;
+  color: #222222;
+  box-shadow: 0 0 3px 3px #b967ff;
 }
